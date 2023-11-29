@@ -9,8 +9,8 @@ class CreateAccauntActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityCreateAccauntBinding.inflate(layoutInflater)
-        setContentView(binding.root636
-        )
+        setContentView(binding.root)
+
 
     }
 }
