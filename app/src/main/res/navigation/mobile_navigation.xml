@@ -12,14 +12,14 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.hospital.ui.dashboard.DashboardFragment"
+        android:id="@+id/navigation_add"
+        android:name="com.example.hospital.ui.dashboard.AddFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_add" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.hospital.ui.notifications.NotificationsFragment"
+        android:id="@+id/navigation_history"
+        android:name="com.example.hospital.ui.notifications.HistoryFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_history" />
 </navigation>
