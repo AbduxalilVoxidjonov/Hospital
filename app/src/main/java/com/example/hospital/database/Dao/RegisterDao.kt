@@ -9,8 +9,13 @@ import com.example.roomdatabase54.database.Entity.HospitalData
 @Dao
 interface RegisterDao {
     @Query("SELECT * FROM RegisterData WHERE email = :email AND password = :password")
-    fun getLogin(email: String, password: String): RegisterData
+    fun getLogin(email: String, password: String): Boolean
+
+    @Query("SELECT * FROM RegisterData where id=:id")
+    fun getHistory(id: Int): RegisterData
 
     @Insert
     fun historyData(registerData: RegisterData)
+
+
 }

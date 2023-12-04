@@ -9,6 +9,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.hospital.databinding.ActivityMainBinding
+import com.example.hospital.ui.home.HomeFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,6 +23,11 @@ class MainActivity : AppCompatActivity() {
 
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
         binding.bottomNavigation.setupWithNavController(navHostFragment.navController)
+
+        HomeFragment().arguments = Bundle().apply {
+            putString("email",intent.getStringExtra("email"))
+            putString("password",intent.getStringExtra("password"))
+        }
 
     }
 }
