@@ -53,7 +53,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="start"
-                    android:hint="Your name"
+                    android:hint=" 이름 "
                     android:imeOptions="actionDone" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -74,7 +74,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="start"
-                    android:hint="Your surname"
+                    android:hint=" 성 "
                     android:imeOptions="actionDone" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -96,7 +96,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="start"
-                    android:hint="Email address"
+                    android:hint=" 로그인 "
                     android:imeOptions="actionDone" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -117,7 +117,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="start"
-                    android:hint="Password"
+                    android:hint=" 비밀번호 "
                     android:imeOptions="actionDone" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -138,6 +138,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/birthday"
+                    android:inputType="datetime"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="start"
@@ -162,7 +163,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="start"
-                    android:hint="Enter Your Location"
+                    android:hint=" 위치 "
                     android:imeOptions="actionDone" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -186,7 +187,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="start"
-                    android:hint="Phone numebr"
+                    android:hint=" 전화 번호 "
                     android:inputType="number" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -200,7 +201,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="16dp"
                 android:backgroundTint="#41C485"
-                android:text="Save"
+                android:text=" 구하다 "
                 app:cornerRadius="20dp" />
         </LinearLayout>
     </ScrollView>

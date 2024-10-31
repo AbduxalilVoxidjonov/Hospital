@@ -29,7 +29,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
-            android:hint="Email"
+            android:hint=" 로그인 "
             app:endIconCheckable="true"
             app:startIconCheckable="true"
             app:startIconDrawable="@drawable/user_icon"
@@ -49,7 +49,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
-            android:hint="Password"
+            android:hint="비밀번호"
             android:minWidth="8dp"
             app:endIconCheckable="true"
             app:endIconMode="password_toggle"
@@ -72,7 +72,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:backgroundTint="#41C485"
-            android:text="Log In"
+            android:text=" 로그인 "
             app:cornerRadius="20dp" />
 
         <LinearLayout
@@ -96,9 +96,9 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_weight="1"
-                android:text="Or sign in with "
+                android:text=" 또는 다음으로 로그인하세요. "
                 android:textColor="#C4C4C4"
-                android:textSize="16sp" />
+                android:textSize="13sp" />
 
             <View
                 android:layout_width="100dp"
@@ -138,7 +138,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Don’t have an account ?"
+            android:text=" 계정이 없습니다 ?"
             android:textColor="#C4C4C4"
             android:textSize="12sp" />
 
@@ -146,7 +146,7 @@
             android:id="@+id/create_account"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Create Account"
+            android:text=" 계정 만들기 "
             android:textColor="#41C485"
             android:textSize="12sp"
             android:textStyle="bold" />
