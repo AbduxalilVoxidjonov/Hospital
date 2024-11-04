@@ -26,7 +26,7 @@ class HistoryFragment : Fragment() {
         val list = arrayListOf<HospitalData>()
 
         appDatabase.historyHospital().getAllHistory().forEach {
-            list.add(HospitalData(it.id, it.doctorName, it.sickness))
+            list.add(HospitalData(it.id, it.doctorName, it.sickness,it.kasalName))
         }
 
         recyclerView = AdapterHistory(list, requireContext())

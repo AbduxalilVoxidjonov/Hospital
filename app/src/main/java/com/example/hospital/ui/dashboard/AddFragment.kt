@@ -29,15 +29,17 @@ class AddFragment : Fragment() {
             btnSave.setOnClickListener {
                 val name = "Doctor: "+doctorName.text.toString()
                 val sicknesss = "Sickness: "+sickness.text.toString()
-                if (name.isEmpty() || sicknesss.isEmpty()) {
+                val kasalname = "Name: "+ kasalName.text.toString()
+                if (name.isEmpty() || sicknesss.isEmpty() || kasalname.isEmpty() ) {
                     Toast.makeText(requireContext(), "To'liq to'ldiring", Toast.LENGTH_SHORT).show()
                     return@setOnClickListener
                 } else {
                     Toast.makeText(requireContext(), "Saqlandi", Toast.LENGTH_SHORT).show()
                     doctorName.text?.clear()
                     sickness.text?.clear()
+                    kasalName.text?.clear()
                     appDatabase.historyHospital()
-                        .historyData(HospitalData(doctorName = name, sickness = sicknesss))
+                        .historyData(HospitalData(doctorName = name, sickness = sicknesss, kasalName = kasalname))
                 }
             }
         }

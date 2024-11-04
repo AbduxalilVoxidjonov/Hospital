@@ -6,6 +6,60 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment"
    >
+   <androidx.cardview.widget.CardView
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintBottom_toTopOf="@+id/recycleView_item"
+       app:layout_constraintTop_toTopOf="parent"
+       android:id="@+id/card_view_watch_time"
+       android:layout_width="300dp"
+       app:cardMaxElevation="10dp"
+       android:layout_marginTop="10dp"
+       android:layout_height="150dp"
+       app:cardCornerRadius="5dp"
+       app:cardElevation="4dp"
+       android:layout_centerInParent="true">
+
+      <!-- TextView for watch time display -->
+      <TextView
+          android:id="@+id/tv_watch_time"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="10dp"
+          android:layout_gravity="center"
+          android:text="Watch Time: 00:00"
+          android:textSize="26sp"
+          android:textColor="@android:color/black"
+          android:fontFamily="sans-serif-medium" />
+      <ImageView
+          android:id="@+id/restartTime"
+          android:layout_marginTop="10dp"
+          android:layout_marginStart="250dp"
+          android:src="@drawable/baseline_restart_alt_24"
+          android:layout_width="30dp"
+          android:layout_height="30dp"/>
+      <LinearLayout
+          android:layout_marginTop="100dp"
+         android:orientation="horizontal"
+          android:gravity="center"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+         <Button
+             android:id="@+id/btn_pause"
+             android:text="Pause"
+             android:layout_marginStart="20dp"
+             android:layout_width="100dp"
+             android:layout_height="wrap_content"/>
+         <Button
+             android:id="@+id/btn_start"
+             android:layout_marginStart="40dp"
+             android:layout_width="100dp"
+             android:text="Start"
+             android:layout_height="wrap_content"/>
+      </LinearLayout>
+   </androidx.cardview.widget.CardView>
+
+
    <com.google.android.material.floatingactionbutton.FloatingActionButton
        android:layout_width="wrap_content"
        android:id="@+id/add_navbat"
@@ -17,14 +71,15 @@
        tools:ignore="MissingConstraints" />
 
    <androidx.recyclerview.widget.RecyclerView
+       android:layout_marginTop="10dp"
        android:id="@+id/recycleView_item"
        tools:listitem="@layout/item_number"
        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
        android:layout_width="match_parent"
-       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/card_view_watch_time"
        app:layout_constraintBottom_toBottomOf="parent"
        app:layout_constraintLeft_toLeftOf="parent"
        app:layout_constraintRight_toRightOf="parent"
-       android:layout_height="match_parent"/>
+       android:layout_height="0dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

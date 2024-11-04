@@ -8,5 +8,6 @@ data class HospitalData(
     @PrimaryKey(autoGenerate = true)
     var id:Int=0,
     var doctorName: String,
+    var kasalName:String,
     var sickness: String
 )

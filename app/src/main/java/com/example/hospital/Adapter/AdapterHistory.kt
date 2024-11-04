@@ -23,6 +23,7 @@ class AdapterHistory(private val list: ArrayList<HospitalData>,private val conte
             binding.apply {
                 doctorName.text = history.doctorName
                 sicknessName.text = history.sickness
+                kasalname.text = history.kasalName
                 remove.setOnClickListener(View.OnClickListener {
                     list.removeAt(adapterPosition)
                     notifyItemRemoved(adapterPosition)
